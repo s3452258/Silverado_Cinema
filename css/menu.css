@@ -87,7 +87,10 @@ Code has been modified to allow for responsive website design.*/
   color: #ffffff;
 }
 #cssmenu ul li:hover,
-#cssmenu ul li.active {
+#indexPage .index,
+#moviesPage .movies,
+#schedulePage .schedule,
+#contactPage .contact {
   background: #1275ae;
   /* Old browsers */
 
@@ -98,13 +101,37 @@ Code has been modified to allow for responsive website design.*/
   background: linear-gradient(to top, #0b4669 0%, #1275ae 50%, #1794dc 51%, #1691d8 78%, #98d2f4 100%);
 }
 #cssmenu ul li:hover::after,
-#cssmenu ul li.active::after {
+#indexPage .index::after,
+#moviesPage .movies::after,
+#schedulePage .schedule::after,
+#contactPage .contact::after {
   background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
   background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
   background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 60%, #1275ae 61%, #1275ae 100%);
   background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
+
+#leftside ul.avmenu li a:hover,
+#indexPage .m,
+#pgabout .menabout,
+#pgguide .menguide,
+#pgmedia .menmedia,
+#pgcourses .mencourses,
+#pgtest .mentest,
+#pgcontact .mencontact {
+  background:url(img/menubg2.gif) repeat-x bottom left #eaeaea;
+  border-bottom:1px solid #b0b0b0;
+  border-left:4px solid #505050;
+  border-right:1px solid #b0b0b0;
+  border-top:1px solid #b0b0b0;
+  color:#505050;
+}
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   #cssmenu {
@@ -122,7 +149,7 @@ Code has been modified to allow for responsive website design.*/
     display: none; /* hide all <li> items */
     margin: 0;
   }
-  #cssmenu .current {
+  #cssmenu .active {
     display: block; /* show only current <li> item */
   }
   #cssmenu a {
@@ -130,10 +157,11 @@ Code has been modified to allow for responsive website design.*/
     padding: 5px 5px 5px 32px;
     text-align: left;
   }
-  #cssmenu .current a {
+  #cssmenu .active a {
     background: none;
     color: #666;
   }
+
 
   /* on nav hover */
   #cssmenu ul:hover {

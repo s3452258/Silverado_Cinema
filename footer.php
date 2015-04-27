@@ -1,3 +1,5 @@
+<!doctype html>
+<html>
 <div id="footer">
   <div class="buttons">
     <ul>
@@ -9,3 +11,4 @@
       <h1>Elliott Gorrell: s3452258, Lazar Golijanin: s3381646</h1>  <h2>&copy; Silverado Cinemas 2015</h2>
     </div>
 </div>
+</html>
