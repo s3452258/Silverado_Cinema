@@ -107,6 +107,15 @@ function showTime(enable, time)
   }
 }
 
+//Updates ticket prices incase day affects price
+
+function dayChanged(object)
+{
+  $(object).closest("form").find("input[type=number]").each(function(){
+    updatePrice(this);
+    });
+}
+
 function updatePrice(ticket)
 {
   var quantity = $(ticket).val();

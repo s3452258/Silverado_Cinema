@@ -35,7 +35,7 @@ h4{ float: left;}
       <h1><a href="index.html">Silverado<span>Cinema</span></a></h1> </div>
 
     <!-- Top Navigation -->
-    <?php include('menu.php') ?>
+    <?php include_once('menu.php') ?>
     <!-- / Top Navigation -->
   </div>
   <!-- / Header -->
@@ -81,7 +81,7 @@ h4{ float: left;}
 								  <tr>
 								  <th colspan="2">Session Day  </th>
 								  <td>
-									<select class="day" name="day" onchange="fillTime(this)" required="required">
+									<select class="day" name="day" onchange="fillTime(this);dayChanged(this);" required="required">
 										<option value="" style="display:none;"></option>
 										<option value="Mon">Monday</option>
 										<option value="Tues">Tuesday</option>
@@ -206,7 +206,7 @@ h4{ float: left;}
 				  
 				  <th colspan="2">Session Day  </th>
 				  <td>
-					<select class="day" name="day" onchange="fillTime(this)" required="required">
+					<select class="day" name="day" onchange="fillTime(this);dayChanged(this);" required="required">
 						<option value="" style="display:none;"></option>
 						<option value="Mon">Monday</option>
 						<option value="Tues">Tuesday</option>
@@ -328,7 +328,7 @@ h4{ float: left;}
 								  <tr>
 								  <th colspan="2">Session Day  </th>
 								  <td>
-									<select class="day" name="day" onchange="fillTime(this)" required="required">
+									<select class="day" name="day" onchange="fillTime(this);dayChanged(this);" required="required">
 										<option value="" style="display:none;"></option>
 										<option value="Mon">Monday</option>
 										<option value="Tues">Tuesday</option>
@@ -448,7 +448,7 @@ h4{ float: left;}
 								  <tr>
 								  <th colspan="2">Session Day  </th>
 								  <td>
-									<select class="day" name="day" onchange="fillTime(this)" required="required">
+									<select class="day" name="day" onchange="fillTime(this);dayChanged(this);" required="required">
 										<option value="" style="display:none;"></option>
 										<option value="Mon" disabled="true">Monday</option>
 										<option value="Tues" disabled="true">Tuesday</option>
@@ -549,7 +549,7 @@ h4{ float: left;}
 <!-- / Main -->
 
 <!-- Footer -->
-<?php include('footer.php'); ?>
+<?php include_once('footer.php'); ?>
 <!-- / Footer -->
 
 </div>

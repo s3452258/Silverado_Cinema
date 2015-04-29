@@ -16,7 +16,7 @@
       <h1><a href="index.html">Silverado<span>Cinema</span></a></h1> </div>
 
     <!-- Top Navigation -->
-    <?php include('menu.php') ?>
+    <?php include_once('menu.php') ?>
     <!-- / Top Navigation -->
   </div>
   <!-- / Header -->
@@ -58,7 +58,7 @@
 <!-- / Main -->
 
 <!-- Footer -->
-<?php include('footer.php'); ?>
+<?php include_once('footer.php'); ?>
 
 <!-- / Footer -->
 

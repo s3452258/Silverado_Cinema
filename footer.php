@@ -5,6 +5,7 @@
     <ul>
       <li><a href='http://validator.w3.org/check?uri=referer'><span>HTML Validator</span></a></li>
       <li><a href='http://jigsaw.w3.org/css-validator/check/referer'><span>CSS Validator</span></a></li>
+      <li><a href='/home/eh1/e54061/public_html/wp/debug.php'><span>PHP Validator</span></a></li>
     </ul>
   </div>
     <div class="cnt">
